@@ -1,0 +1,46 @@
+Code subfunctions:
+
+putchar
+
+putstr (if str==NULL)
+	write (null)
+	return
+
+exputnbr
+1. handle int_min
+2. handle -
+if >=base(10)
+{
+	i += exputnbr(c/10);
+	exputnbr(c%10);
+}
+Else
+putchar (c + '0);
+i++;
+return i
+
+puthex
+1. insigned int @param
+if >= base(16)
+{
+	i += puthex(param / 16)
+	puthex(param % 16)
+}
+else if (c > 9)
+c + a - 10
+else
+	putchar c + 0
+i++
+return (i)
+
+printf 
+
+1. va_list ap
+2. va_start(ap, format)
+int i = 0;
+bytes read = 0;
+while (format[i])
+{
+	if %-> i ++ -> handle cases int unsigned char char *
+	else write and bytes ++
+}

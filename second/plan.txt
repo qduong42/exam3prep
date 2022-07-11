@@ -1,0 +1,36 @@
+UTILS:
+
+putchar
+itoa
+putstr
+write_double -> itoa
+convert_hexa_lowercase -> same as itoa but only for positive - unsigned int type into va_arg
+unsinged long vs int
+
+int conver(int a)
+{
+	if (a == INT_MIN)
+	return (int)
+	int i = 0;
+
+	if (a < 0)
+	{
+		a = -a;
+		write(1, "-", 1);
+		i = i++;
+	}
+	else if (a > 9)
+	{
+		i += conver(a/10);
+		conver(a%10);
+	}
+	else if (a < 10)
+	{
+		putchr('0' + a);
+	}
+	i++;
+	reuturn (i);
+}
+
+same for hexa but unsigned int and /16
+diff case for 0-9 and 10-15 -> abcdef
